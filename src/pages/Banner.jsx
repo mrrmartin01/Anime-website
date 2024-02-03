@@ -2,6 +2,9 @@ import React, {useState, useEffect} from 'react';
 import './banner.css';
 import bgImg from '../images/Attack_on_Titans_preview.jpg'
 import MovieComponent from '../components/MovieContent';
+import MovieDate from '../components/MovieDate';
+import PlayBtn from '../components/PlayBtn';
+import MovieSwiper from '../components/MovieSwiper';
 
 function Banner() {
     const [movies, setMovies] = useState([]);
@@ -27,19 +30,14 @@ function Banner() {
                         <MovieComponent/>
                     </div>
                     <div className='col-lg-6 col-md-12'>
-                        <div className="date active">
-                            <h2>On 15th August</h2>
-                        </div>
-                        <div className="trailer d-flex align-items-center justify-content-center active">
-                            <a href="#" className="playBtn">
-                            <ion-icon name="play-outline"></ion-icon>
-                            </a>
-                            <p>watch anime here</p>
-                        </div>
+                        <MovieDate/>
+                       <PlayBtn/>
                     </div>
                 </div>
             </div>
         </div>
+        {
+            movies && movies.length>0 && <MovieSwiper slides= { movies} />}
     </div>
   )
 }

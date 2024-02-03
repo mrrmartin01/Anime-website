@@ -36,8 +36,8 @@
     {
         "_id": 3,
         "titleImg" : "../assets/anime/D_logo.jpg",
-        "bgImg" : "../assets/anime/One_Punch_Mani.png",
-        "previewImg" : "../assets/anime/One_Punch_Mani_preview.jpg",
+        "bgImg" : "../assets/anime/One_Punch_Man.png",
+        "previewImg" : "../assets/anime/One_Punch_Man_preview.jpg",
         "video" : "https://aniwatch.to/watch/one-punch-man-63?ep=1501",
         "ttle":"One Punch Man",
         "year" : "2015", 
