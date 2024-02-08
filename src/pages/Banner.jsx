@@ -21,6 +21,7 @@ function Banner() {
     }, []);
     
   return (
+    <>
     <div className='banner'>
         <div className="movie">
             <img src={bgImg} alt="Background Img" className='bgImg active'></img>
@@ -39,6 +40,24 @@ function Banner() {
         {
             movies && movies.length>0 && <MovieSwiper slides= { movies} />}
     </div>
+    <div>
+        {movies && movies.map(item => (
+            <ul key={item._id}>
+                <li>
+                    <img src={item.bgImg} alt="" />
+                    <h2>{item.title}</h2>
+                    <p>Year: {item.year}</p>
+                    <p>Date: {item.date}</p> 
+                    <p>Age Limit:{item.age_limit}</p> 
+                    <p>Length :{item.length}</p> 
+                    <p>Category:{item.category}</p> 
+                    <p>Type:{item.type}</p> 
+                    <p>Description:{item.description}</p> 
+                </li>
+            </ul>
+            ))}
+    </div>
+    </>
   )
 }
 
