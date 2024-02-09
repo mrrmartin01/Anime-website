@@ -3,7 +3,7 @@ import './playBtn.css';
 
 function PlayBtn() {
   return (
-    <div className="trailer d-flex align-items-center justify-content-center active">
+    <div className="trailer d-flex align-items-center justify-content-center">
         <a href="#" className="playBtn">
             <ion-icon name="play-outline"></ion-icon>
         </a>
