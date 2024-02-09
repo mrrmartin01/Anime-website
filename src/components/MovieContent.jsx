@@ -6,7 +6,7 @@ import Button from './Button';
 
 function MovieContent() {
   return (
-    <div className="content active">
+    <div className="content">
       <img src={logo} alt="Movie TItle" className="movie-title" />
       <h4><span>Year</span>
       <span><i>Age</i></span>

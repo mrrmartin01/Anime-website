@@ -8,7 +8,7 @@ import Button from '../components/Button';
 function Header() {
   return (
     <header>
-        <a href="./" className="logo"> Anime</a>
+        <a href="./" className="logo"> AnimeHub</a>
         <ul className="nav">
             {
                 navListData.map(nav => (
