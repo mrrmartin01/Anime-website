@@ -4,21 +4,16 @@ import logo from '../images/Attack_on_Titans_logo.jpg'
 import Button from './Button';
 
 
-function MovieContent() {
+function MovieContent({movie}) {
   return (
-    <div className="content">
-      <img src={logo} alt="Movie TItle" className="movie-title" />
-      <h4><span>Year</span>
-      <span><i>Age</i></span>
-      <span>Length</span>
-      <span>Category</span>
+    <div className={`content ${movie.active ? "active" : undefined}`}>
+      <img src={movie.bgImg} alt="Movie TItle" className="movie-title" />
+      <h4><span>{movie.year}</span>
+      <span><i>{movie.age_limit}</i></span>
+      <span>{movie.length}</span>
+      <span>{movie.category}</span>
       </h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Eveniet id vel placeat, sequi beatae facilis nam optio 
-        neque fuga, illum voluptates tempora asperiores corporis? 
-        Enim, quo totam. Nesciunt, quisquam animi!
-      </p>
+      <p>{ movie.description }</p>
       <div className="button">
         <Button icon = {<ion-icon name="bookmark-outline"></ion-icon>} 
         name='Book'

@@ -30,13 +30,13 @@
         "category" : ["Anime", "Adventure","Action"],
         "type" : "coming",
         "description" : "Baki is a popular Japanese manga series about a skilled martial artist on a quest to become the strongest fighter in the world, known for its intense and brutal fights, unique art style, and intricate plot.",
-        "active" : true
+        "active" : false
     },
 
     {
         "_id": 3,
         "titleImg" : "../assets/anime/D_logo.jpg",
-        "bgImg" : "../assets/anime/One_Punch_Man.jpg",
+        "bgImg" : "../assets/anime/One_Punch_Mana.jpg",
         "previewImg" : "../assets/anime/One_Punch_Man_preview.jpg",
         "video" : "https://aniwatch.to/watch/one-punch-man-63?ep=1501",
         "ttle":"One Punch Man",
@@ -47,7 +47,7 @@
         "category" : ["Anime", "Adventure", "Comedy"],
         "type" : "coming",
         "description" : "'One Punch Man' is a Japanese anime and manga series that follows the life of Saitama, a seemingly ordinary man who becomes a hero for fun. Despite his unassuming appearance, Saitama possesses unmatched strength, capable of defeating any opponent with a single punch. Frustrated by the lack of challenge in his battles, he navigates a world filled with diverse heroes, monstrous villains, and a Hero Association, all while seeking a worthy adversary to bring excitement back into his heroic journey.",
-        "active" : true
+        "active" : false
     }, 
 
     {
@@ -64,6 +64,6 @@
         "category" : ["Anime", "Adventure", "Drama", "Action"],
         "type" : "coming",
         "description" : "'Demon Slayer' is a Japanese anime and manga series following Tanjiro Kamado's quest to avenge his family and save his sister, featuring breathtaking animation and intense action in a beautifully crafted world.",
-        "active" : true
+        "active" : false
     }
 ]
