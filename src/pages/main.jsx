@@ -1,12 +1,13 @@
 import React from 'react';
-import "./main.css";
+import './main.css';
+import Schedule from './Schedule';
 
-function main() {
+function Main() {
   return (
     <main>
-        
+        <Schedule/>
     </main>
   )
 }
 
-export default main
+export default Main
