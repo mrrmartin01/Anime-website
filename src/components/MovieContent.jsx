@@ -1,6 +1,5 @@
 import React from 'react';
 import './movieContent.css'
-import logo from '../images/Attack_on_Titans_logo.jpg'
 import Button from './Button';
 
 

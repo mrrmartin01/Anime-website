@@ -1,6 +1,6 @@
 import React from 'react';
 import './main.css';
-import Schedule from './Schedule';
+import Schedule from './schedule';
 
 function Main() {
   return (
