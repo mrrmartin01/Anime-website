@@ -14,18 +14,18 @@ function Banner() {
       .then((data) => setMovies(data))
       .catch((e) => console.log(e.message));
   };
- 
+
   useEffect(() => {
     fetchData();
   }, []);
 
   const handleSlideChange = (id) => {
-    const newMovies = movies.map(movie => {
-        movie.active = false;
-        if  (movie._id === id) {
-            movie.active = true;
-        }
-       return movie;
+    const newMovies = movies.map((movie) => {
+      movie.active = false;
+      if (movie._id === id) {
+        movie.active = true;
+      }
+      return movie;
     });
     setMovies(newMovies);
   };
@@ -35,19 +35,19 @@ function Banner() {
       {movies &&
         movies.length > 0 &&
         movies.map((movie) => (
-          <div className="movie">
+          <div key={movie._id} className="movie">
             <img
               src={movie.previewImg}
               alt="Background Img"
-              className={`bgImg ${movie.active ? "active" : undefined}`}
+              className={`bgImg ${movie.active ? " active" : undefined}`}
             ></img>
             <div className="container-fluid">
               <div className="row">
                 <div className="col-lg-6 col-md-12">
-                  <MovieContent  movie ={movie}/>
+                  <MovieContent movie={movie} />
                 </div>
                 <div className="col-lg-6 col-md-12">
-                  <MovieDate movie ={movie}/>
+                  <MovieDate movie={movie} />
                   <PlayBtn movie={movie} />
                 </div>
               </div>
