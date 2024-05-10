@@ -7,6 +7,7 @@
     padding: 0 100px;
     overflow: hidden;
     transition: 0.5s;
+    /* margin-top: 5%; */
 }
 
 .banner::after{

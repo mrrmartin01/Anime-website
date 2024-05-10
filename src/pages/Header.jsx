@@ -7,7 +7,7 @@ import Button from "../components/Button";
 
 function Header() {
   return (
-    <header>
+    <header className="movie-head">
       <a href="./" className="logo">
         {" "}
         AnimeHub
